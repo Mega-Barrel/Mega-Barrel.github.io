@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: #000;
+}
+
+body {
+    background-color: rgb(249, 250, 251);
+    padding: 28px 12%;
+}
+
+p, span, li {
+    color: rgb(51 51 51);
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: mediumslateblue;
+    font-weight: 500;
+}
+
+li {
+    line-height: 1.9em;
+}
+
+/* Container Styling */
+#container--main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    padding-bottom: 20px;
+}
+
+.nav-links {
+    padding-left: 0px;
+}
+
+/* Social links */
+.section--page {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+#wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#user-name {
+    font-size: 3em;
+    line-height: 1em;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#bio, a {
+    font-weight: 300;
+}
+
+#email {
+    color: rgb(51 51 51);
+}
+
