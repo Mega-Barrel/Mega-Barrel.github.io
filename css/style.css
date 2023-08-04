@@ -42,27 +42,19 @@ li {
     padding-left: 0px;
 }
 
-/* Social links */
+.nav-links a{
+    padding-right: 20px
+}
+
+/* Intro Section */
 .section--page {
     padding-top: .5em;
     padding-bottom: .5em;
 }
 
-#wrapper--hero {
-    display: flex;
-    align-items: center;
-    gap: 4em;
-}
-
 #user-name {
-    font-size: 3em;
+    font-size: 2em;
     line-height: 1em;
-}
-
-#profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
 }
 
 #bio, a {
@@ -73,3 +65,27 @@ li {
     color: rgb(51 51 51);
 }
 
+/* Social-page Section */
+#socials--list a{
+    padding-right: 20px;
+    font-size: 1em;
+    color: rgb(51 51 51);
+    transition: 0.3s;
+}
+
+#socials--list a:hover {
+    color: mediumslateblue;
+}
+
+#wrapper--techstack__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack {
+    border: 1px solid rgb(51 51 51);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
