@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
 
 * {
-    font-family: 'Readex Pro';
+    font-family: "Readex Pro";
     line-height: 1.5em;
     box-sizing: border-box;
     color: #000;
@@ -12,7 +12,9 @@ body {
     padding: 28px 12%;
 }
 
-p, span, li {
+p,
+span,
+li {
     color: rgb(51 51 51);
     font-size: 1em;
 }
@@ -42,14 +44,14 @@ li {
     padding-left: 0px;
 }
 
-.nav-links a{
-    padding-right: 20px
+.nav-links a {
+    padding-right: 20px;
 }
 
 /* Intro Section */
 .section--page {
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 #user-name {
@@ -57,7 +59,8 @@ li {
     line-height: 1em;
 }
 
-#bio, a {
+#bio,
+a {
     font-weight: 300;
 }
 
@@ -66,7 +69,7 @@ li {
 }
 
 /* Social-page Section */
-#socials--list a{
+#socials--list a {
     padding-right: 20px;
     font-size: 1em;
     color: rgb(51 51 51);
@@ -77,6 +80,7 @@ li {
     color: mediumslateblue;
 }
 
+/* Tech Stack */
 #wrapper--techstack__items {
     display: flex;
     flex-wrap: wrap;
@@ -88,4 +92,39 @@ li {
     border: 1px solid rgb(51 51 51);
     padding: 0.5em 1em;
     border-radius: 5px;
+}
+
+/* Work History */
+.card--work-history {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.line-break {
+    background-color: #2b3031;
+    height: 1px;
+}
+
+/* Projects */
+.card--project {
+    padding-top: 0.1em;
+    padding-bottom: 1em;
+}
+
+.card--project a {
+    color: rgb(51 51 51);
+    transition: 0.3s;
+}
+
+.card--project a:hover {
+    color: mediumslateblue;
+}
+
+/* Footer */
+.footer-links {
+    padding-left: 0px;
+}
+
+.footer-links a {
+    padding-right: 20px;
 }
