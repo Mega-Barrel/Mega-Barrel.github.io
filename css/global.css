@@ -20,10 +20,10 @@ li {
     font-size: 1em;
 }
 
-a {
+a, h3 {
     text-decoration: none;
     color: mediumslateblue;
-    font-weight: 500;
+    font-weight: 500px;
 }
 
 li {
@@ -35,8 +35,6 @@ li {
     max-width: 700px;
     margin: 0 auto;
 }
-
-/* Home Page */
 
 /* Navbar */
 .navbar {
