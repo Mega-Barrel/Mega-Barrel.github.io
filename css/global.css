@@ -1,5 +1,6 @@
 /* Global CSS */
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700"); */
 
 * {
     font-family: "Readex Pro";
@@ -20,7 +21,8 @@ li {
     font-size: 1em;
 }
 
-a, h3 {
+a,
+h3 {
     text-decoration: none;
     color: mediumslateblue;
     font-weight: 500px;
@@ -36,9 +38,16 @@ li {
     margin: 0 auto;
 }
 
+.section--page {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
 /* Navbar */
 .navbar {
     padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .nav-links {
@@ -47,14 +56,10 @@ li {
 
 .nav-links a {
     padding-right: 20px;
+    font-size: 1.05em;
 }
 
 /* Intro Section */
-.section--page {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
 #user-name {
     font-size: 2em;
     line-height: 1em;
@@ -122,10 +127,58 @@ a {
 }
 
 /* Footer */
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .footer-links {
     padding-left: 0px;
 }
 
 .footer-links a {
     padding-right: 20px;
+}
+
+/* Contact form */
+.feedback-input {
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid mediumslateblue;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #CC4949;
+}
+
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 20%;
+    background: mediumslateblue;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: #7b68ee;
 }
