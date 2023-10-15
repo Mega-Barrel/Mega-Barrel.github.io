@@ -3,7 +3,7 @@
 
     <head>
         <meta content="width=device-width" name="viewport">
-        <title>Project Title - Weather API</title>
+        <title>Project Title - Init Kafka</title>
         <link rel="stylesheet" href="/css/global.css">
         <script src="https://kit.fontawesome.com/3754321d1c.js" crossorigin="anonymous"></script>
     </head>
@@ -29,18 +29,32 @@
 
             <a href="/pages/projects.html">&#x2190; Go Back</a>
 
-            <h1>SQL Progress Dashboard - Data Pipeline</h1>
+            <h1>Kafka Project - Kafka</h1>
 
             <ul>
-                <!-- <li><a href="" target="_blank">Live
-                        Demo</a></li> -->
-                <li><a href="https://github.com/Mega-Barrel/docker-weather-api/"
-                        target="_blank">Source code</a></li>
+                <li><a href="https://github.com/Mega-Barrel/init-kafka-project"
+                        target="_blank">Source
+                        Code</a></li>
             </ul>
-            <p>Implementing a weather service to get the previous day's weather data for Mumbai city using Weather API.</p>
             <p>
-                Hourly weather updates
+                Kafka application to produce sample data, with single consumer to read the messages.
             </p>
+
+            <ul>
+                <li>Kafka application build using zookeeper and kafka image, with <b>1 replication and 1 topic</b>.</li>
+                <li><b>Producer:</b> Produces data, picks random value from 1 to 10, and decides the
+                    priority of the message. If value is <u>above</u> 5, it is categorized as <b>High</b> status.</li>
+
+                <li><b>Consumer:</b> Consumer messages produced by Producer on topic
+                    <b>test_topic</b>.</li>
+                <p>Sample data consumed: {
+                    "test_data": {
+                    "random_value": 7
+                    },
+                    "timestamp": 2023-10-14 15:57:59.575960,
+                    "value_status": "High"
+                    }</p>
+            </ul>
 
             <section class="section--page">
                 <!-- Footer Menu -->
