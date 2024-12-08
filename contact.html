@@ -45,31 +45,63 @@
                 <p>
                     Let's connect with you! Whether you have any questions, Feel free to drop me a
                     message anytime. Looking forward to hearing from you!</p>
-            </section>
-
-            <section class="section--page">
-                <form target="_blank" action="https://formsubmit.co/saurabhjoshi7869@gmail.com"
-                    method="POST">
-
+                <form id="contactForm">
                     <!-- Disable captcha -->
                     <input type="hidden" name="_captcha" value="false">
 
                     <input name="name" type="text" class="feedback-input" placeholder="Name"
                         required />
-
                     <input name="email" type="text" class="feedback-input" placeholder="Email"
                         required />
-
                     <input name="subject" type="text" class="feedback-input"
                         placeholder="Email Subject" />
-
                     <textarea name="text" class="feedback-input" placeholder="Comment"
                         required></textarea>
-                    <!-- <input type="submit" value="SUBMIT" /> -->
-                    <button type="submit" class="btn btn-lg btn-dark btn-block">Send
-                    </button>
+                    <button type="submit" class="btn btn-lg btn-dark btn-block">Send</button>
                 </form>
+
+                <!-- Thank you message -->
+                <div id="thankYouMessage" style="display: none; margin-top: 20px;">
+                    <p>Thank you for contacting me. I will reach out to you shortly! Cheers :)</p>
+                </div>
+
+                <div id="loadingMessage" style="display: none; margin-top: 20px;">
+                    <p>Sending your message... Please wait.</p>
+                </div>
+
             </section>
+
+            <script>
+                document.getElementById("contactForm").addEventListener("submit", function (event) {
+                    event.preventDefault();
+
+                    const form = event.target;
+
+                    // Show the loading message
+                    document.getElementById("loadingMessage").style.display = "block";
+
+                    const formData = new FormData(form);
+                    fetch("https://formsubmit.co/saurabhjoshi7869@gmail.com", {
+                        method: "POST",
+                        body: formData
+                    })
+                        .then(response => {
+                            document.getElementById("loadingMessage").style.display = "none"; // Hide the loading message
+                            if (response.ok) {
+                                form.style.display = "none";
+                                document.getElementById("thankYouMessage").style.display = "block";
+                            } else {
+                                alert("There was an error submitting your form. Please try again later.");
+                            }
+                        })
+                        .catch(error => {
+                            document.getElementById("loadingMessage").style.display = "none"; // Hide the loading message
+                            console.error("Error:", error);
+                            alert("There was an error submitting your form. Please try again later.");
+                        });
+                });
+            </script>
+
 
             <section class="section--page">
                 <!-- Footer Menu -->
