@@ -36,7 +36,7 @@
                             <a href="about.html">About</a>
                             <a href="blogs.html">Blogs</a>
                             <a href="projects.html">Projects</a>
-                            <a href="services.html">Services</a>
+                            <!-- <a href="services.html">Services</a> -->
                             <a href="contact.html">Contact Me</a>
                         </ul>
                     </nav>
@@ -58,7 +58,8 @@
                     <p id="bio">Beyond my daily work, I've
                         participated in 6 data hackathons and <b>won 4 🥇</b> in a row, including an
                         internship at Georgia Tech, where I built an "Internal Search Prospect
-                        Database" for their Sports Team. Hackathon Profile <a href="https://devpost.com/saurabhjoshi7869" target="_blank">.</a>
+                        Database" for their Sports Team. Hackathon Profile <a
+                            href="https://devpost.com/saurabhjoshi7869" target="_blank">.</a>
                     </p>
 
                     <p><b>Prev:</b> Data Analyst at <a href="https://www.media.net/"
@@ -86,7 +87,11 @@
                 <h2>Tech Stack</h2>
                 <div id="wrapper--techstack__items">
                     <div class="card--techstack">
-                        <span>SQL, Python, Kafka, Airflow, FastAPI</span>
+                        <span>Streamlit, Tableau, Metabase</span>
+                    </div>
+
+                    <div class="card--techstack">
+                        <span>SQL, Python, PySpark, Airflow, FastAPI, MongoDB</span>
                     </div>
 
                     <div class="card--techstack">
@@ -94,20 +99,19 @@
                     </div>
 
                     <div class="card--techstack">
+                        <span>A/B Testing, Funnel Analysis, Retention Analysis, Cohort Analysis, Clickstream Analysis</span>
+                    </div>
+
+                    <div class="card--techstack">
                         <span>ETL, ELT, Data Warehouse, Data Modelling, RESTful API, Postman</span>
                     </div>
 
                     <div class="card--techstack">
-                        <span>GCP, Snowflake, BigQuery, Query Optimization</span>
+                        <span>Google Data Proc, BigQuery, Pub/Sub, Cloud Storage, Bigtable, Cloud Composer</span>
                     </div>
 
                     <div class="card--techstack">
-                        <span>Streamlit, Tableau</span>
-                    </div>
-
-                    <div class="card--techstack">
-                        <span> A/B Testing, Product Analytics, Clickstream Analysis, Root Cause
-                            Analysis</span>
+                        <span>Real-Time Bidding (RTB), Programmatic Advertising, Object-Oriented Programming, Clean Code, Design Patterns</span>
                     </div>
                 </div>
             </section>
@@ -121,17 +125,23 @@
                     <p>14/11/2024 - Present</p>
                     <p></p>
                     <ul>
-                        <li>Working within the User Acquisition team for Rummy product.</li>
-                        <li>Analyzed A/B tests for registration flow, optimizing onboarding by
-                            testing new slider-based registration screens.</li>
+                        <li>Winner of Product Hackathon, where our team proposed new Loyalty Points
+                            feature based on user wagering and streak progression.</li>
+                        <li>Designed clickstream funnels to map user journeys, identify drop-offs,
+                            and prioritize product improvements.</li>
                         <li>Collaborated with cross-functional teams to prioritize and execute ad
                             hoc analyses, aligning product initiatives with business goals.</li>
-                        <li>Conducted i2r analysis by various splits (platform, version, acquisition
-                            channel) to identify data trends or perform Root Cause Analysis for
-                            product drops, enabling data-driven decision-making.</li>
-                        <li>Collaborating with marketing teams to analyze campaign performance
-                            across various acquisition channels, identifying opportunities to
-                            optimize spend and maximize new user growth.</li>
+                        <li>Ran experiments on skill-based redirection (beginner → tutorial, skilled
+                            → add cash), improving long-term conversions by 10%.</li>
+                        <li>Evaluated RummyCom lobby revamp and trust & safety features via A/B
+                            tests, showing measurable conversion, cash games and retention uplift.
+                        </li>
+                        <li>Developed an I2R pipeline using Spark SQL to surface onboarding
+                            frictions, which helped identify product gaps and improve new user
+                            funnel visibility.</li>
+                        <li>Led a Default Entry Fee recommendation A/B experiment where users were
+                            shown tailored table suggestions, improving AWPU by 6%, average entry
+                            fee by 4%, and games played by 2%.</li>
                     </ul>
 
                 </div>
@@ -139,61 +149,30 @@
                 <div class="line-break"></div>
                 <div class="card--work-history">
                     <strong>🚀 Full Time | Data Analyst | Media.net</strong>
-                    <p>04/01/2024 - 12/11/2024</p>
+                    <p>06/07/2024 - 12/11/2024</p>
                     <p></p>
                     <ul>
-                        <li>Created a <b>data pipeline</b> for the Internal Crawler product to
-                            report daily product usage stats.</li>
-                        <li>I Support with Daily Reports to share <b>Product P&L</b> to the
-                            <b>CEO</b> and <b>stakeholders</b>.
-                        </li>
-                        <li>Collaborated with the Product Manager to analyze <b>Ad position</b> and
-                            <b>Ad placement</b> parameters, passed to our Internal Bidders to
-                            measure <i>feature impact and coverage</i> on domains.
-                        </li>
                         <li>Developed a Python script to extract millions of data using Kibana API,
                             <b>analyzing ad-code / ad-type mappings</b>, which resulted in
                             identifying key optimization areas.
                         </li>
-                        <li>Conducted Exploratory Analysis on Domain - Publisher level of our
-                            product to discover missed opportunities.</li>
-                        <li>I conducted a Root Cause Analysis to find a drop in traffic for the
-                            <b>YBN Bidders</b>.
+                        <li>Collaborated with Product Managers to optimize real-time bidding (RTB)
+                            parameters, improving ad placement efficiency and increasing coverage by
+                            46%.</li>
+                        <li>Automated campaign performance reporting (Python + Airflow), reducing
+                            manual work by 98% and enabling a 2x increase in campaign launches.</li>
+                        <li>Built and optimized product data pipelines in SQL/Big Query, improving
+                            reporting reliability for daily usage stats and P&L dashboards.</li>
+                        <li>Identified high-value keyword opportunities through SQL analysis,
+                            driving a 16% increase in keyword utilization and a 45% gross profit
+                            uplift.</li>
+                        <li>Built and optimized a data pipeline for the Internal Crawler product
+                            using SparkSQL, delivering daily usage statistics and improving
+                            reporting reliability.</li>
+
+                        <li>Supporting with Daily Reports to share <b>Product P&L</b> to the
+                            <b>CEO</b> and <b>stakeholders</b>.
                         </li>
-                        <li>Supported with A/B testing for various ad products, interpreting results
-                            to inform optimization decisions.</li>
-                        <li>Supporting with Ad-Hoc analysis requests.</li>
-                    </ul>
-
-                </div>
-
-                <!-- <div class="line-break"></div> -->
-                <div class="card--work-history">
-                    <strong>🚀 Full Time | Associate Project Management | Media.net</strong>
-                    <p>06/07/2022 - 03/01/2024</p>
-                    <p>Responsible for developing various analytical reports to measure campaign
-                        performance and
-                        its metrics.</p>
-
-                    <b>Analytical Reports:</b>
-                    <ul>
-                        <li>Automated the daily campaign reports with SQL Queries to track key
-                            performance indicators (KPIs) at a granular level, including campaign
-                            launches and finding out trending/network level keywords utilization,
-                            and implemented automated weekly Campaign Manager performance report
-                            using BigQuery and tableau, reducing manual reporting intervention by
-                            <b>98%</b>.
-                        </li>
-                        <li>Created various SQL report to identify new and existing keywords based
-                            on seasonal trends. This resulted in an increase in campaign launches by
-                            <b>2x</b> and a <b>16%</b> increase in trending/network-level keyword
-                            utilization,
-                            which led to a <b>45% increase</b> in gross profit.
-                        </li>
-                    </ul>
-
-                    <b>Ad-Hoc Tasks:</b>
-                    <ul>
                         <li>Worked with Tableau to create multiple dashboards to find profitable
                             campaign patterns to optimize and drive better results.</li>
                         <li>Shipped a <b>0 to 1 Article Subtitle</b> Feature across all domains, and
@@ -208,19 +187,23 @@
                     <strong>🚀 Freelance | Analytics Engineer | Fiverr</strong>
                     <p>01/10/2021 - Present</p>
                     <ul>
-                        <li><b>Implemented</b> and optimized data models using <b>dbt, SQL, Python,
-                                Bigquery/Snowflake</b>, following <i>best practices for data
-                                integrity and performance</i>. Developed and documented
-                            comprehensive data models and key metrics, enhancing data accessibility
-                            and usability for non-technical stakeholders.
+                        <li>Designed data marts for user retention, feature adoption, and marketing
+                            impact using SQL, MongoDB, and Python.</li>
+                        <li>Designed and created web scraping data pipelines for publicly available
+                            data as per various use-cases
                         </li>
-                        <li>Utilized <b>ELT tools</b> for efficient <i>data extraction,
-                                transformation, and loading</i> processes.</li>
-                        <li>Helped startups to set up data pipelines, increasing <i><b>20-30%
-                                    process efficiency</b></i>.</li>
-                        <li>Collaborated with clients including <i><b>Yahoo, Ellequant,
-                                    buidlerstribe (buidl.so), and Klimaticz</b></i> on various data
-                            projects, delivering actionable insights and process improvements.</li>
+                        <li>Designed and implemented scalable ETL pipelines using CGP services
+                            including Dataproc, Cloud Storage, Bigtable, Big Query, Pub/Sub, and
+                            Cloud Composer, enabling efficient data ingestion, transformation, and
+                            querying of large datasets across multiple systems.</li>
+                        <li>Built 300+ dbt models with automated data validation tests, version-controlled documentation, and reusable Jinja macros for clean, modular code.</li>
+                        <li>Implemented CI/CD pipelines for data transformations, ensuring code
+                            quality and reducing deployment times by 60%.</li>
+                        <li>Collaborated with clients including Yahoo, Ellequant, buidlerstribe
+                            (buidl.so), and Klimaticz and many more on various data projects,
+                            delivering actionable insights and process improvements.</li>
+                        <li><b>Skills:</b> PySpark, Docker, Google Cloud Platform, Streamlit, Airflow, dbt,
+                            SQL, Python, data modeling, CI/CD, Product Analytics.</li>
                     </ul>
                 </div>
                 <div class="line-break"></div>
