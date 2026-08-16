@@ -2,8 +2,7 @@
 name: Deploy Website - CD (GitHub Pages)
 
 on:
-  push:
-    branches: [ "main" ] # ONLY runs when code is pushed or merged to main
+  workflow_dispatch:
 
 # Required permissions for GitHub Pages deployment
 permissions:
