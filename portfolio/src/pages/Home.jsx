@@ -1,8 +1,7 @@
 import React from 'react';
 
 // Your Tech Stack Data
-const techStackData = [
-  "Streamlit, Tableau, Metabase",
+const techStackDatas = [
   "SQL, Python, PySpark, Airflow, FastAPI, MongoDB",
   "dbt (Data Build Tool), Airbyte, Docker, Google Analytics",
   "A/B Testing, Funnel Analysis, Retention Analysis, Cohort Analysis, Clickstream Analysis",
@@ -11,63 +10,81 @@ const techStackData = [
   "Real-Time Bidding (RTB), Programmatic Advertising, Object-Oriented Programming, Clean Code, Design Patterns"
 ];
 
+const techStackData = [
+  "Python, SQL (SparkSQL, PostgreSQL), Object-Oriented Programming (OOP), pytest",
+  "Apache Spark (PySpark), Kafka, Apache Airflow, dbt, FastAPI",
+  "GCP (BigQuery, Cloud Run, Dataproc, Pub/Sub, GCS, GAR), AWS (S3, Lambda), Docker",
+  "Event-Driven Architecture, Data Warehousing, OLAP/OLTP Data Modeling, REST APIs",
+  "CI/CD, Automated Testing, Idempotent Processing, Dead Letter Queues (DLQs)",
+  "A/B Testing, Clickstream Analysis, Financial Metrics, BI (Streamlit/Tableau/Metabase)",
+  "Programmatic Advertising (RTB), Mobile Gaming Analytics, Distributed Systems"
+];
+
 // Your Work History Data
 const workHistoryData = [
   {
-    title: "🚀 Full Time | Data Engineer | Onix",
+    title: "Software Engineer - Data | Onix | Full Time",
     date: "11/2025 - Present",
     description: "",
     bullets: [
-      "Designing scalable ETL/ELT pipelines and metadata-driven ingestion engines on the Google Cloud Platform.",
-      "Developed a metadata-driven ingestion engine using Python and Cloud Run to process tens of thousands of daily files."
+      "Engineered an event-driven processing architecture utilizing Airflow to orchestrate highly scalable Dataflow pipelines, processing millions of records daily with audit controls to support reliable business logic and downstream reporting.",
+      "Established robust software engineering standards by implementing comprehensive testing frameworks (pytest) and designing custom CI/CD pipelines, automating deployment workflows to significantly reduce manual developer overhead.",
+      "Implementing best practices around monitoring, validation, and reliability for production data workflows."
     ]
   },
   {
-    title: "🚀 Full Time | Product Analyst | JungleeGames",
+    title: "Product Analyst | JungleeGames | Full Time",
     date: "11/2024 - 09/2025",
     description: "",
     bullets: [
-      "Winner of Product Hackathon, where our team proposed new Loyalty Points feature based on user wagering and streak progression.",
+      "Winner of Product Hackathon, where our team proposed a new Loyalty Points feature based on user wagering and streak progression.",
+      "Built modern data ingestion pipelines using PySpark, SparkSQL, and AWS S3 Tables to extract, transform, and normalize high-volume event data (clickstream funnel, I2R pipelines).",
+      "Increased long-term user conversions by <b>10%</b> by designing scalable A/B experimentation models and metrics, enabling the business to rapidly execute skill-based user redirections.",
       "Designed clickstream funnels to map user journeys, identify drop-offs, and prioritize product improvements.",
-      "Ran experiments on skill-based redirection (beginner → tutorial, skilled → add cash), improving long-term conversions by 10%.",
-      "Evaluated RummyCom lobby revamp and trust & safety features via A/B tests, showing measurable conversion, cash games and retention uplift."
+      "Evaluated RummyCom lobby revamp and trust & safety features via A/B tests, showing measurable conversion, cash games, and retention uplift.",
+      "Led a Default Entry Fee recommendation A/B experiment where users were shown tailored table suggestions, improving AWPU by <b>6%</b>, average entry fee by <b>4%</b>, and games played by <b>2%</b>."
     ]
   },
   {
-    title: "🚀 Full Time | Data Analyst | Media.net",
+    title: "Data Analyst | Media.net | Full Time",
     date: "07/2022 - 11/2024",
     description: "",
     bullets: [
-      "Developed a Python script to extract millions of data using Kibana API, analyzing ad-code / ad-type mappings, which resulted in identifying key optimization areas.",
-      "Collaborated with Product Managers to optimize real-time bidding (RTB) parameters, improving ad placement efficiency and increasing coverage by 46%.",
-      "Automated campaign performance reporting (Python + Airflow), reducing manual work by 98% and enabling a 2x increase in campaign launches.",
-      "Built and optimized product data pipelines in SQL/Big Query, improving reporting reliability for daily usage stats and P&L dashboards."
+      "Engineered scalable <b>ETL</b> workflows and <b>OLAP data models</b> for a core programmatic bidding product using SQL and Python, significantly improving the reliability of central financial reporting.",
+      "Reduced manual reporting hours by <b>98%</b> by automating daily ETL pipelines to track complex ad revenue metrics, ensuring accurate reconciliation between gross ad revenue and net company profit across BI dashboards.",
+      "Created comprehensive BigQuery data models to optimize network-level keyword bidding, leading to a <b>2x</b> increase in campaign launches, a <b>16%</b> increase in keyword utilization, and a <b>45%</b> increase in gross profit.",
+      "Conducted a Root Cause Analysis to identify the cause of traffic drop for various supply/demand-side platforms.",
+      "Engineered optimized SQL/BigQuery data pipelines and custom Python extractors via the Kibana API to process millions of ad-mapping records, partnering with Product Managers to tune real-time bidding (RTB) parameters and drive a <b>46%</b> increase in ad coverage."
     ]
   },
   {
-    title: "🚀 Freelance | Analytics Engineer | Fiverr",
+    title: "Freelance | Software Engineer - Data | Fiverr",
     date: "10/2021 - 07/2022",
     description: "",
     bullets: [
-      "Designed data marts for user retention, feature adoption, and marketing impact using SQL, MongoDB, and Python.",
-      "Designed and created web scraping data pipelines for publicly available data as per various use-cases.",
+      "Engineered highly available, distributed data pipelines using object-oriented Python and GCP , implementing idempotent processing and Dead Letter Queues <b>(DLQs)</b> to ensure zero data loss for critical business data.",
+      "Developed custom Python connectors to integrate 3rd party REST APIs and external data sources into central analytics environments, automating external data requests and ensuring secure data ingestion.",
       "Built 300+ dbt models with automated data validation tests, version-controlled documentation, and reusable Jinja macros for clean, modular code.",
-      "Implemented CI/CD pipelines for data transformations, ensuring code quality and reducing deployment times by 60%."
+      "Implemented CI/CD pipelines for data transformations, ensuring code quality and reducing deployment times by <b>60%</b>.",
+      "Designed data marts for user retention, feature adoption, and marketing impact using SQL, MongoDB, and Python.",
+      "Designed and created web scraping data pipelines for publicly available data as per various use-cases."
     ]
   },
   {
-    title: "🚀 Internship | Software Engineer | CodeWind",
+    title: "Internship | Software Engineer | CodeWind",
     date: "01/06/2021 - 31/07/2021",
-    description: "Responsible for developing CURD API using NodeJS integrating with PostgreSQL database.",
-    bullets: []
+    description: "",
+    bullets: [
+      "Engineered and deployed scalable RESTful CRUD APIs using Node.js and PostgreSQL to enable efficient data storage, retrieval, and management."
+    ]
   },
   {
-    title: "🚀 Internship | Data Analyst | Georgia Tech University",
+    title: "Internship | Data Analyst | Georgia Tech University",
     date: "03/2021 - 06/2021",
     description: "",
     bullets: [
-      "Developed a Standalone database prospect search engine tool for Georgia Tech University as a Data Analyst Intern.",
-      "Implemented a Web Sports Analytics dashboard application to analyze players’ game data and track player sentiments, tweet comparison and overall standings between players, resulting in a 10% increase in player performance."
+      "Built an 'Internal Search Prospect Database' to centralize scouting data and streamline the prospect discovery process for the university sports team.",
+      "Developed a web-based sports analytics dashboard tracking player statistics, social sentiment, and competitive standings, delivering insights that contributed to a 10% improvement in player performance."
     ]
   }
 ];
@@ -80,12 +97,12 @@ export default function Home() {
         <div>
           <h1 id="user-name">Hi, I'm Saurabh Joshi</h1>
           <p id="bio">
-            A data professional with 3.4+ years of experience working at the intersection of Product Analytics and Data Engineering. Over the years, I’ve helped gaming and ad-tech companies uncover insights from data, run impactful experiments, and build scalable pipelines that make analytics more reliable and actionable.
+            Hi, I’m Saurabh, a Data Engineer with about 4 years of experience building highly scalable data platforms, event-driven pipelines, and solid cloud infrastructure. I’ve spent most of my career tackling complex data challenges in the mobile gaming and programmatic advertising spaces.
           </p>
           <p id="bio">
             Beyond my daily work, I've participated in 6 data hackathons and <b>won 4 🥇</b> in a row, including an internship at Georgia Tech, where I built an "Internal Search Prospect Database" for their Sports Team. Hackathon Profile <a href="https://devpost.com/saurabhjoshi7869" target="_blank" rel="noreferrer">here</a>.
           </p>
-          <p><b>Current:</b> Data Engineer at Onix, Pune</p>
+          <p><b>Current:</b> Software Engineer - Data at Onix, Pune</p>
           <p><b>Prev:</b> Product Analyst at JungleeGames | Data Analyst at Media.net</p>
           <p id="email">
             📩 <a href="mailto:saurabhjoshi7869@gmail.com">saurabhjoshi7869@gmail.com</a>
@@ -124,18 +141,17 @@ export default function Home() {
               <strong>{job.title}</strong>
               <p>{job.date}</p>
               {job.description && <p>{job.description}</p>}
-              
               {job.bullets.length > 0 && (
                 <ul>
                   {job.bullets.map((bullet, bIndex) => (
-                    <li key={bIndex}>{bullet}</li>
+                    <li 
+                      key={bIndex} 
+                      dangerouslySetInnerHTML={{ __html: bullet }} 
+                    />
                   ))}
                 </ul>
               )}
             </div>
-            
-            {/* Add a line break for all but the last item */}
-            {index < workHistoryData.length - 1 && <div className="line-break"></div>}
           </React.Fragment>
         ))}
       </section>

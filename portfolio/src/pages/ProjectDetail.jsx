@@ -22,14 +22,25 @@ export default function ProjectDetail() {
 
       <h1>{project.title}</h1>
 
+      {/* Conditionally render links based on what properties exist in the data */}
       <ul>
-        <li>
-          <a href={project.repoLink} target="_blank" rel="noreferrer">
-            Source Code / Demo
-          </a>
-        </li>
+        {project.repoLink && (
+          <li>
+            <a href={project.repoLink} target="_blank" rel="noreferrer">
+              Source Code
+            </a>
+          </li>
+        )}
+
+        {project.liveLink && (
+          <li>
+            <a href={project.liveLink} target="_blank" rel="noreferrer">
+              Live App / Demo
+            </a>
+          </li>
+        )}
       </ul>
-      
+
       <p>{project.description}</p>
 
       {/* Render bullets only if they exist */}

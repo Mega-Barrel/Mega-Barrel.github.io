@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function Contact() {
-  const [status, setStatus] = useState(''); // '' | 'loading' | 'success' | 'error'
+  const [status, setStatus] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
