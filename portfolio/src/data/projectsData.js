@@ -319,6 +319,7 @@ export const projectsList = [
   }
 ];
 
+
 export const hackathonsList = [
   {
     url: "https://sql-question-dashboard.streamlit.app/",
